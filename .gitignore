@@ -11,13 +11,11 @@ ENV/
 dist/
 build/
 
-# OpenVINO 模型文件（体积大，建议用 Git LFS 或不提交）
-models/*.bin
-models/*.xml
-models/*.onnx
+# OpenVINO 模型文件（使用 Git LFS 管理，见 .gitattributes）
+# models/*.bin, models/*.xml, models/*.onnx 已通过 LFS 跟踪
 
-# 但保留标签文件
-!models/imagenet_classes.txt
+# 保留标签文件
+# models/imagenet_classes.txt 已提交
 
 # 测试图片和输出
 *.jpg
