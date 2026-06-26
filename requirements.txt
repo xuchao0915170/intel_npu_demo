@@ -1,0 +1,12 @@
+# Intel NPU 推理 demo 依赖
+# OpenVINO 运行时（含 NPU 插件，需 Meteor Lake 及以上的 Intel NPU 驱动）
+openvino>=2024.3.0
+
+# 图像预处理
+numpy>=1.24
+Pillow>=10.0
+
+# 仅 export_model.py 导出示例模型时需要（运行推理本身不需要）
+# 如不需要导出可注释掉
+torch>=2.2
+torchvision>=0.17
